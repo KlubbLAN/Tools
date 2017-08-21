@@ -1,0 +1,41 @@
+<table style="width: 190mm;">
+	<tbody>
+		<tr>
+			<td style="text-align: center;">
+				<p>
+					<span style="font-size: 48px;"><span class="huge">{%if seat.taken_by_user.profile.language == &quot;nb&quot;%}<b>SETE{%else%}<b>SEAT{%endif%}: {{seat.public_seat_name}}</b></b></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				<p>
+					<span style="font-size: 48px;">{% if seat.is_taken %}<br />
+					<span class="large">{%if seat.taken_by_user.profile.language == &quot;nb&quot;%}NAVN{% else %}NAME{% endif %}: {{ seat.taken_by_user.get_full_name }}<br />
+					NICKNAME: {{ seat.taken_by_user.username }}</span><br />
+					<br />
+					{% else %} {% if seat.reserved %}<span class="large">DENNE PLASSEN ER RESERVERT - IKKE LEDIG</span>&nbsp;{% else %}<br />
+					<span class="large">Denne plassen er LEDIG</span><br />
+					{% endif %} {% endif %}<br />
+					<span class="medium">{%if seat.taken_by_user.profile.language == &quot;nb&quot;%}Velkommen til{% else %}Welcome to{% endif %} </span></span></p>
+				<p>
+					<span style="font-size: 48px;">KlubbLAN&nbsp;</span></p>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<img src="http://i.imgur.com/RmLHaP2.png" /><img src="http://i.imgur.com/RnqmCYb.jpg" /></td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
